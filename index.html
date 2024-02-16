@@ -29,6 +29,12 @@
                 <label for="age">Your Age</label>
                 <span class="required-field">*</span>
                 <input type="number" id="age" name="age" required min="21" max="120">
+
+                <!--Password section-->
+                <label>Your Secret Code (Must be 6 Alphanumeric Characters.)</label>
+                <span class="required-field">*</span>
+                <input type="password" required title="6 Alphanummeric Character Passcode" pattern="[0-9A-Za-z]{6}">
+
                 <h5>Must be 21 or older to enter the Contest</h5>
             </div>
             <!-- TODO: Make fieldset and legend -->
@@ -100,8 +106,10 @@
     <option value="WY">Wyoming</option>
                 </select> 
             <!--State selector ends here-->
+
+            <!--Zip code section starts here-->
             <label for="zip">Zip Code</label>
-            <input type="number" id="zip" name="zip">
+            <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="5 Digit US Zip Code">
             </fieldset>
 
             <!-- TODO: Second fieldset -->
